@@ -15,7 +15,6 @@ export default function Register(props) {
 
     async function handleSubmit(e) {
         e.preventDefault();
-        console.log(user, password, password2);
         try {
         await registerUser(user, password, password2);
         router.push("/login");
